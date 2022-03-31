@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Smooch+Sans:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Shadows+Into+Light&family=Smooch+Sans:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Hind+Madurai:wght@500&family=Shadows+Into+Light&family=Smooch+Sans:wght@300;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.header{
+    min-height: 100vh ;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(hands.jpg) ;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0% 6%;
+
+}
+.logo{
+    max-width: 25vh;
+    max-height: 25vh;
+    cursor: pointer;
+}
+
+nav a{
+    margin-top: 0px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    
+}
+
+.nav-link{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0 10px;
+    position: relative;
+    font-size: 25px;
+    font-family: 'Smooch Sans', sans-serif;
+    font-weight: bold;
+}
+
+nav ul li ::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    margin: auto;
+    background: blue;
+   display: block;
+   transition: 0.4s;
+}
+nav ul li :hover::after{
+    width: 100%;
+}
+
+
+h1{
+    font-family: 'Hind Madurai', sans-serif;
+    padding: 35px 0px;
+    font-size: 80px;
+    font-weight: bold;
+    transition: 0.5s;
+    color: rgb(153, 153, 252);
+
+}
+
+.text-box{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    cursor: pointer;
+
+}
+
+p{
+    font-family: 'Hind Madurai', sans-serif;
+    font-size: 20px;
+    padding-bottom: 15px;
+   
+    cursor: pointer;
+}
+
+
+
+
+
+nav .fa{
+    display: none;
+
+}
+
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+
+    .nav-links ul li{
+        display: block;
+    }
+
+    .nav-links{
+        position: absolute;
+        background: rgb(0, 0, 0);
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 0.5s;
+    }
+    nav ul li a{
+        color: rgb(255, 255, 255);
+    }
+
+    nav .fa{
+        display: block;
+        color: rgb(255, 255, 255);
+        margin: 10px;
+        font-size: 24px;
+        cursor: pointer;
+      
+    }
+    .nav-links ul{
+        padding: 30px;        
+    }
+}
+
+/*----------------------------------------------------BODY--------------------------------------*/
+.course{
+    padding-top:80px ;
+    width: 100%;
+    text-align: center;+CSCSCSCSCSCSCS
+    background: rgb(201, 215, 245);
+    transition: 0.5s;
+}
+  
+.course-col:hover{
+    background: black;
+    color: rgb(221, 221, 224);
+}
+.course-col1:hover{
+    background: black;
+    color: rgb(221, 221, 224);
+}
+
+.btitle{
+    font-size: 45px;
+    color: black;
+    text-align: center;
+    padding: 50px;
+    
+  
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.course-col{
+    flex-basis: 31%;
+    background: rgb(221, 221, 224);
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-bottom: 5%;
+    padding: 30px 12px;
+    transition: 0.5s;
+}
+.course-col:hover{
+    box-shadow: 0 0 20px 0px rgb(15, 0, 36);
+}
+
+h3{
+    font-family: 'Hind Madurai', sans-serif;
+    padding-bottom: 10px;
+}
+
+.course-col1{
+    flex-basis: 31%;
+    background: rgb(221, 221, 224);
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-bottom: 5%;
+    padding: 30px 12px;
+    transition: 0.5s;
+}
+.course-col1:hover{
+    box-shadow: 0 0 20px 0px rgb(15, 0, 36);
+}
+
+.row1{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+@media(max-width:700px){
+    .row{
+        flex-direction: column;
+    }
+    .row1{
+        flex-direction: column;
+    }
+}
